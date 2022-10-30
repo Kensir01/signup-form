@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contenitore-esterno{
+  background-color: hsl(0, 100%, 74%) ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contenitore-head {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.head{
+  width: 90%;
+  height: 200px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.prima-sezione {
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.seconda-sezione{
+  font-size: 13px;
+}
+
+
+.container-prova{
+  width: 100%;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.prova{
+  width: 90%;
+  height: 100px;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+}
+
+.testo-prova{
+  margin: auto;
+  width: 50%;
+}
+
+.container-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.app-wrapper{
+  background-color: #fff;
+  width: 90%;
+  height: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name,
+.email,
+.password {
+  color: #969292;
+  font-size: 16px;
+}
+
+
+.input {
+  height: 32px;
+  font-size: 16px;
+  outline: none;
+  width: 85%;
+  padding: 15px 15px 15px 25px;
+  margin-bottom: 20px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 10px;
+}
+
+.error{
+  color: red;
+}
+
+.submit {
+  display: flex;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  padding: 15px 30px 15px 45px;
+  background: hsl(154, 59%, 51%);
+  margin: auto;
+  outline: none;
+  border: 2px outset hsl(154, 59%, 51%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.submit:hover{
+  background: #77e2b4;
+  border: 2px outset #6dd3a5;
+
+}
+
+button:active {
+  transform: translateY(2px)
+}
+
+.form-succes{
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  min-width: 370px;
+  color: #f80759;
+}
+
+.cont-terms {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+}
+
+.terms {
+  color: hsl(0, 100%, 74%) ;
 }
