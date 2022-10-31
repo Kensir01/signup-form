@@ -4,7 +4,12 @@
 }
 
 .contenitore-esterno{
-  background-color: hsl(0, 100%, 74%) ;
+  background-color: hsl(0, 100%, 74%);
+  min-height: 100vh;
+}
+
+.container-head-desktop{
+  display: none;
 }
 
 .contenitore-head {
@@ -67,7 +72,7 @@
 .app-wrapper{
   background-color: #fff;
   width: 90%;
-  height: 500px;
+  min-height: 500px;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -88,13 +93,41 @@
   outline: none;
   width: 85%;
   padding: 15px 15px 15px 25px;
-  margin-bottom: 20px;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 10px;
+  margin-top: 13px;
+  margin-bottom: 2px;
 }
 
 .error{
   color: red;
+  margin-bottom: 5px;
+  font-size: 12px;
+  text-align: end;
+  position: relative;
+}
+
+.error-control{
+  color: red;
+  height: 32px;
+  font-size: 16px;
+  outline: none;
+  width: 85%;
+  padding: 15px 15px 15px 25px;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-top: 13px;
+  margin-bottom: 2px;
+}
+
+.error-control:placeholder-shown {
+  color: transparent;
+}
+
+.error-svg{
+  position: absolute;
+  bottom: 38px;
+  right: 22px;
 }
 
 .submit {
@@ -105,7 +138,7 @@
   color: white;
   padding: 15px 30px 15px 45px;
   background: hsl(154, 59%, 51%);
-  margin: auto;
+  margin-top: 15px;
   outline: none;
   border: 2px outset hsl(154, 59%, 51%);
   border-radius: 5px;
@@ -140,4 +173,86 @@ button:active {
 
 .terms {
   color: hsl(0, 100%, 74%) ;
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .contenitore-head-mobile{
+    display: none;
+  }
+
+  .container-prova{
+    width: 40%;
+    justify-content: space-around;
+  }
+
+  .spacer-desktop{
+    width: 40%;
+    display: flex;
+    height: 75px;
+  }
+
+  .container-prova-desktop{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4vh;
+    align-items: center;
+  }    
+
+  .prova {
+    height: 75px;
+  }
+
+  .container-desktop{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4vh;
+    align-items: center;
+    min-height: 614px;
+  }
+
+  .container-head-desktop{
+    width: 60%;
+    max-height: 42vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenitore-head {
+    text-align: start;
+  }
+
+  .head-desktop{
+    width: 75%;
+    display: flex;
+  }
+
+  .prima-sezione {
+    font-size: 24px;
+  }
+
+  .seconda-sezione {
+    font-size: 18px;
+  }
+
+  .container-wrapper {
+    width: 60%;
+  }
+
+  .app-wrapper{
+    width: 70%;
+  }
+
+  .submit{
+    width: 95%;
+  }
+
+  .error{
+    padding-right: 25px;
+  }
+
+  .error-svg{
+    padding-right: 25px;
+  }
+
 }

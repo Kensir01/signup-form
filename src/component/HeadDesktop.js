@@ -1,8 +1,8 @@
 import React from 'react'
 
-const HeadDesktop = () => {
+const Head = () => {
   return (
-    <div className='contenitore-head-mobile'>
+    <div>
         <div className='contenitore-head'>
             <div className='head'>
                 <div className='prima-sezione'>
@@ -17,4 +17,4 @@ const HeadDesktop = () => {
   )
 }
 
-export default HeadDesktop
+export default Head

@@ -2,7 +2,8 @@ import React from 'react'
 
 const BannerProva = () => {
   return (
-    <div>
+    <div className='container-prova-desktop'>
+        <div className='spacer-desktop'></div>
         <div className='container-prova'>
             <div className='prova'>
                 <div className='testo-prova'>
