@@ -120,7 +120,7 @@ const SignupForm = () => {
                     </div>
 
                     <div className='cont-terms'>
-                        <p>By clicking the button, you are agreeing to our <span className='terms'>Terms and Services</span></p>
+                        <p>By clicking the button, you are agreeing to our <a className='terms' href='#'>Terms and Services</a> </p>
                     </div>
 
                 </form>
